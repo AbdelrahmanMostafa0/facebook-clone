@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3a89ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.login-form .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form .flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px 20px;
+    border: solid 1px #333;
+    margin: 10px 0;
+}
+
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+}
+
+.login-form .fb-icon {
+    width: 100px;
+}
