@@ -9,26 +9,23 @@ body {
 }
 
 .btn {
-    color: #fff;
-    background-color: #0d6efd;
-    border: none;
+
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #3a89ff;
-}
+
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+
     padding: 0 40px;
 }
 
 .flex {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .grid {
@@ -58,15 +55,27 @@ a {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="search"] {
     padding: 10px 20px;
     border: solid 1px #333;
     margin: 10px 0;
 }
 
 
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
+nav .flex {
+    justify-content: space-between;
+    height: 70px;
 
+}
+
+nav img {
+    width: 50px;
+}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -75,4 +84,17 @@ input[type="password"] {
 
 .login-form .fb-icon {
     width: 100px;
+}
+
+.profile-info img {
+    width: 200px;
+    /* border-radius: 50% !important; */
+}
+
+.profile-info .flex>* {
+    margin: 0 20px;
+}
+
+.go-edit {
+    justify-self: flex-end;
 }

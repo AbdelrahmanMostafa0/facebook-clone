@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <s>
+        <link rel="stylesheet" href="css/bootstrap.min.css"></s>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class=" container flex">
+            <a href=""><img src="images/fb-icon-md.png" alt=""></a>
+            <div class="search">
+                <input type="search" id="site-search" name="q" placeholder="search">
+                <button class="btn btn-outline-primary">Search</button>
+            </div>
+            <a href=""><img src="images/user-icon.png" alt=""></a>
+        </div>
+    </nav>
+    <div class="card container">
+        <div class="profile-info">
+            <div class="container  flex ">
+                <div class="flex">
+                    <img id="profile-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <div class="user-info">
+                        <h2 class="user-name">Abdelrahman Mostafa</h2>
+                        <p id="friends"><span id="friends-count">500</span> Friend</p>
+                    </div>
+                </div>
+                <div class="go-edit">
+                    <a class="btn btn-dark" href="edit-profile.html">Edit profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container card">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src=" js/main.js"> </script>
+</body>
+
+</html>
