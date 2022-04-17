@@ -199,6 +199,9 @@ input[type="file"] {
     margin-right: 5px;
 }
 
+.edit-profile {
+    border: #333 solid 2px;
+}
 
 @media(max-width:780px) {
     .flex {
