@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontaoswm -->
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <s>
@@ -42,10 +44,117 @@
 
     </nav>
 
+    <div class="container add-post">
+        <div class="card my-3" ">
 
-    <script src="js/bootstrap.bundle.js"></script>
+            <form action="" class=" grid">
+            <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" id="profile-pic">
 
-    <script src=" js/main.js"> </script>
+            <input type="text" id="post-text" name="post-text" placeholder="What's on your mind" required>
+            <input type="file" id="img" name="img" accept="image/*">
+            <input class="btn btn-outline-success" type="submit" value="Post">
+
+            </form>
+            <hr>
+        </div>
+    </div>
+
+    <div class="news-feed">
+        <div class="container">
+            <div class="row my-3">
+                <div class="post card">
+                    <div class="user-info flex">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 class="user-name">Abdelrahman Mostafa</h5>
+                    </div>
+                    <hr>
+                    <img src="images/post-img-demo.jpg" alt="">
+                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                    <hr>
+                    <div class="post-interact flex">
+                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
+                                    class="fa like-icon">&#xf087;</i> like</a>
+
+                        </div>
+                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
+                                    class='far'>&#xf27a;</i>Comment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="post card">
+                    <div class="user-info flex">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 class="user-name">Abdelrahman Mostafa</h5>
+                    </div>
+                    <hr>
+                    <img src="images/post-img-demo.jpg" alt="">
+                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                    <hr>
+                    <div class="post-interact flex">
+                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
+                                    class="fa like-icon">&#xf087;</i> like</a>
+
+                        </div>
+                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
+                                    class='far'>&#xf27a;</i>Comment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="post card">
+                    <div class="user-info flex">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 class="user-name">Abdelrahman Mostafa</h5>
+                    </div>
+                    <hr>
+                    <img src="images/post-img-demo.jpg" alt="">
+                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                    <hr>
+                    <div class="post-interact flex">
+                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
+                                    class="fa like-icon">&#xf087;</i> like</a>
+
+                        </div>
+                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
+                                    class='far'>&#xf27a;</i>Comment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="post card">
+                    <div class="user-info flex">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 class="user-name">Abdelrahman Mostafa</h5>
+                    </div>
+                    <hr>
+                    <img src="images/post-img-demo.jpg" alt="">
+                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                    <hr>
+                    <div class="post-interact flex">
+                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
+                                    class="fa like-icon">&#xf087;</i> like</a>
+
+                        </div>
+                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
+                                    class='far'>&#xf27a;</i>Comment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <form action="/action_page.php">
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
+    </form> -->
+        <script src="js/bootstrap.bundle.js"></script>
+
+        <script src=" js/main.js"> </script>
 </body>
 
 </html>

@@ -53,6 +53,10 @@ a {
     align-items: center;
 }
 
+p {
+    margin: 0;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -69,7 +73,7 @@ nav {
 
 nav .flex {
     justify-content: space-between;
-    height: 70px;
+    min-height: 70px;
 
 }
 
@@ -79,7 +83,7 @@ nav img {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 50px;
+    padding: 40px;
 }
 
 .login-form .fb-icon {
@@ -97,4 +101,135 @@ nav img {
 
 .go-edit {
     justify-self: flex-end;
+}
+
+.add-post input[type="text"] {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#profile-pic {
+    width: 50px;
+
+}
+
+.add-post .grid {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5px;
+    align-items: flex-start;
+}
+
+.add-post .card {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#post-text {
+    grid-column: 2/ 4;
+}
+
+.add-post #img {
+
+    grid-column: 4/6;
+    overflow: hidden;
+    margin: 0;
+    width: 125px;
+}
+
+.post {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.likes-coun {
+    font-size: 25px;
+}
+
+.add-post input[type="submit"] {
+    grid-row: 3;
+    grid-column: 2/5;
+}
+
+input[type="file"] {
+    padding: 10px 20px;
+}
+
+.user-info {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post-interact {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post-interact i {
+    margin-right: 5px;
+}
+
+
+.user-info img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+
+@media(max-width:780px) {
+    .flex {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .add-post input[type="text"] {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    #profile-pic {
+        width: 50px;
+        grid-column: 1;
+        align-self: center;
+        margin: 5px auto;
+
+    }
+
+    .add-post .grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .add-post .card {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    #post-text {
+
+        grid-column: 1;
+    }
+
+    .add-post #img {
+
+        grid-column: 1;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 125px;
+    }
+
+    .add-post input[type="submit"] {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    .user-info {
+        flex-direction: row;
+
+    }
+
+    .post-interact {
+        flex-direction: row;
+
+    }
+
 }
