@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <s>
-        <link rel="stylesheet" href="css/bootstrap.min.css"></s>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -51,8 +51,10 @@
             <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" id="profile-pic">
 
             <input type="text" id="post-text" name="post-text" placeholder="What's on your mind" required>
-            <input type="file" id="img" name="img" accept="image/*">
-            <input class="btn btn-outline-success" type="submit" value="Post">
+            <input type="file" id="file" name="img" accept="image/*">
+            <label for="file" class="upload-btn"><i class="upload-icon material-icons"
+                    style="font-size:36px">add_to_photos</i></label>
+            <input class="btn btn-outline-primary" type="submit" value="Post">
 
             </form>
             <hr>
