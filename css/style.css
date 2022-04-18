@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
-}
+body {}
 
 .btn {
 
@@ -180,6 +178,12 @@ input[type="file"] {
     transform: scale(0.9);
 }
 
+.add-post input[type="text"] {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
 .user-info {
     justify-content: flex-start;
     align-items: center;
@@ -204,7 +208,50 @@ input[type="file"] {
     border: #333 solid 2px;
 }
 
+.account-img {
+    width: 70px;
+    margin-right: 5px;
+}
+
+.friend-request,
+.friend-suggestion {
+    margin-top: 10px;
+    padding: 200px 0;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+
+}
+
+.add-delete {
+    justify-self: flex-end;
+}
+
+.account-data {
+    justify-self: start;
+
+}
+
 @media(max-width:780px) {
+    nav {
+        padding: 1.5rem 0;
+    }
+
+    nav input[type="search"] {
+        width: 100%;
+    }
+
+    nav .dropdown {
+        align-self: flex-start;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
     .flex {
         flex-direction: column;
         gap: 5px;
@@ -213,6 +260,7 @@ input[type="file"] {
     .add-post input[type="text"] {
         max-width: 700px;
         margin: 0 auto;
+
     }
 
     #profile-pic {
@@ -268,6 +316,47 @@ input[type="file"] {
         grid-column: 3;
         align-self: center;
         margin-left: 120px;
+    }
+
+    .user-info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .add-post .grid {
+        gap: 5px;
+    }
+
+    #post-text {
+        max-width: 270px;
+    }
+
+    .add-post input[type="submit"] {
+        margin: 0;
+
+    }
+
+    .account-img {
+        width: 100px;
+    }
+
+    .friend-request {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    .add-delete {
+        justify-self: flex-end;
+    }
+
+    .account-data {
+        justify-self: start;
+        margin-left: 0;
+        flex-direction: row;
     }
 
 }
