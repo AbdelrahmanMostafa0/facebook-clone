@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/fb-icon-sm.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <s>
+        <link rel="stylesheet" href="css/bootstrap.min.css"></s>
+    <link rel="icon" href="images/fb-icon-sm.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Facebook</title>
+</head>
+
+<nav>
+    <div class=" container flex">
+        <a href="home.html"><img src="images/fb-icon-md.png" alt=""></a>
+        <div class="search">
+            <input type="search" id="site-search" name="q" placeholder="search">
+            <button class="btn btn-outline-primary">Search</button>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/icons8-settings-144.png" alt="" style="width: 25px;">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="home.html">Home</a></li>
+                <li><a class="dropdown-item " href="profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="edit-profile.html">Edit Profile</a></li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="log-in.html">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container card">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">Friends Requsts</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Friend Suggestion</button>
+        </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
+
+</div>
+<div class="container"></div>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+
+<script src=" js/main.js"> </script>
+</body>
+
+</html>
