@@ -41,132 +41,185 @@
     </div>
 </nav>
 
+<!-- the main body container of both Request&Suggestion used bootstrap so some classs make no sence 
+    what we need is the container with the class friend-request & friend-suggestion -->
 <div class="container card my-5">
+
     <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <!--Friend Request tab  -->
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                role="tab" aria-controls="home" aria-selected="true">Friend Request</button>
+            <button class="nav-link active" id="requests-tab" data-bs-toggle="tab" data-bs-target="#requests"
+                type="button" role="tab" aria-controls="home" aria-selected="true">Friend Request</button>
         </li>
+        <!-- Friend Suggestion -->
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                role="tab" aria-controls="profile" aria-selected="false">Friend Suggestion</button>
+            <button class="nav-link" id="suggestions-tab" data-bs-toggle="tab" data-bs-target="#suggestions"
+                type="button" role="tab" aria-controls="suggestions" aria-selected="false">Friend Suggestion</button>
         </li>
-
     </ul>
+    <!-- tabs content -->
     <div class="tab-content" id="myTabContent">
-        <!--  -->
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <!-- friend request container start  -->
+        <div class="tab-pane fade show active" id="requests" role="tabpanel" aria-labelledby="requests-tab">
+            <!-- friend request -->
             <div class="friend-request  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                    <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                    <!-- account name -->
+                    <h2 id="account-name" class="account-name">Abdelrahman Mostafa</h2>
+                </a>
+                <!-- btns -->
                 <div class="add-delete">
+                    <!--Accept btn  -->
                     <button class="btn btn-outline-primary">Accept</button>
+                    <!-- Delete -->
                     <button class="btn btn-outline-danger">Delete</button>
                 </div>
             </div>
             <div class="friend-request  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                    <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                    <!-- account name -->
+                    <h2 id="account-name" class="account-name">Abdelrahman Mostafa</h2>
+                </a>
+                <!-- btns -->
                 <div class="add-delete">
+                    <!--Accept btn  -->
                     <button class="btn btn-outline-primary">Accept</button>
+                    <!-- Delete -->
                     <button class="btn btn-outline-danger">Delete</button>
                 </div>
             </div>
             <div class="friend-request  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                    <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                    <!-- account name -->
+                    <h2 id="account-name" class="account-name">Abdelrahman Mostafa</h2>
+                </a>
+                <!-- btns -->
                 <div class="add-delete">
+                    <!--Accept btn  -->
                     <button class="btn btn-outline-primary">Accept</button>
+                    <!-- Delete -->
                     <button class="btn btn-outline-danger">Delete</button>
                 </div>
             </div>
             <div class="friend-request  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                    <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                    <!-- account name -->
+                    <h2 id="account-name" class="account-name">Abdelrahman Mostafa</h2>
+                </a>
+                <!-- btns -->
                 <div class="add-delete">
+                    <!--Accept btn  -->
                     <button class="btn btn-outline-primary">Accept</button>
+                    <!-- Delete -->
                     <button class="btn btn-outline-danger">Delete</button>
                 </div>
             </div>
+            <div class="friend-request  py-3">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
+                    <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name -->
+                    <h2 id="account-name" class="account-name">Abdelrahman Mostafa</h2>
+                </a>
+                <!-- btns -->
+                <div class="add-delete">
+                    <!--Accept btn  -->
+                    <button class="btn btn-outline-primary">Accept</button>
+                    <!-- Delete -->
+                    <button class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+
         </div>
-        <!--  -->
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <!-- -------------------------------------friend suggestion container start ---------------------- -->
+        <div class="tab-pane fade" id="suggestions" role="tabpanel" aria-labelledby="suggestions-tab">
+            <!-- friend suggestion -->
             <div class="friend-suggestion  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name  -->
                     <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                </a>
+                <!-- sdd friend btn -->
                 <div class="add-friend">
                     <button class="btn btn-outline-primary">Send Request</button>
-
                 </div>
             </div>
+            <!-- friend suggestion -->
             <div class="friend-suggestion  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name  -->
                     <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                </a>
+                <!-- sdd friend btn -->
                 <div class="add-friend">
                     <button class="btn btn-outline-primary">Send Request</button>
-
                 </div>
             </div>
+            <!-- friend suggestion -->
             <div class="friend-suggestion  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name  -->
                     <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                </a>
+                <!-- sdd friend btn -->
                 <div class="add-friend">
                     <button class="btn btn-outline-primary">Send Request</button>
-
                 </div>
             </div>
+            <!-- friend suggestion -->
             <div class="friend-suggestion  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name  -->
                     <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                </a>
+                <!-- sdd friend btn -->
                 <div class="add-friend">
                     <button class="btn btn-outline-primary">Send Request</button>
-
                 </div>
             </div>
+            <!-- friend suggestion -->
             <div class="friend-suggestion  py-3">
-                <hr>
-                <div class="account-data flex">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
                     <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name  -->
                     <h2 class="account-name">Abdelrahman Mostafa</h2>
-
-                </div>
+                </a>
+                <!-- sdd friend btn -->
                 <div class="add-friend">
                     <button class="btn btn-outline-primary">Send Request</button>
-
                 </div>
             </div>
+            <!-- friend suggestion -->
+            <div class="friend-suggestion  py-3">
+                <a href="#" class="account-data flex">
+                    <!-- account img -->
+                    <img id="account-img " class="account-img rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- account name  -->
+                    <h2 class="account-name">Abdelrahman Mostafa</h2>
+                </a>
+                <!-- sdd friend btn -->
+                <div class="add-friend">
+                    <button class="btn btn-outline-primary">Send Request</button>
+                </div>
+            </div>
+
         </div>
     </div>
 
