@@ -47,76 +47,47 @@
     </nav>
     <!-- ----------------------profile info section---------------- -->
     <div class="card">
-        <div class=" container">
+        <div class="container">
             <div class="profile-info">
                 <div class="container  flex ">
                     <div class="flex">
                         <!-- profile img -->
-                        <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <img id="account-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
                         <!-- user info -->
                         <div class="user-info">
-                            <h2 class="user-name">Abdelrahman Mostafa</h2>
+                            <h2 id="account-name" class="user-name">Abdelrahman Mostafa</h2>
                             <p id="friends"><span id="friends-count">500</span> Friend</p>
                         </div>
                     </div>
                     <!-- edit profilr btn -->
-                    <div class="go-edit">
-                        <a class="btn btn-dark" href="edit-profile.html">Edit profile</a>
+                    <div class="remove-friend">
+                        <button id="remove-friend" class="btn btn-danger">Remove Friend</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ----------------------add post section---------------- -->
-    <div class="container add-post">
-        <div class="card my-3" ">
-            <!-- form body -->
-            <form action="" class=" grid">
-            <!-- profile img -->
-            <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" id="profile-pic">
-            <!-- post text inout -->
-            <input type="text" id="post-text" name="post-text" placeholder="What's on your mind">
-            <!-- <textarea style="border-radius: 30px;" type="text" id="post-text" name="post-text"
-            placeholder="What's on your mind"></textarea> -->
-            <!-- img uploader -->
-            <input type="file" id="file" name="img" accept="image/*">
-            <label for="file" class="upload-btn"><i class="upload-icon material-icons"
-                    style="font-size:36px">add_to_photos</i></label>
-            <!-- post btn -->
-            <input class="btn btn-outline-primary" type="submit" value="Post">
-            </form>
-            <!-- form body end -->
-            <hr>
-        </div>
-    </div>
     <!-- ----------------------news feed section---------------- -->
     <div class="news-feed">
         <div class="container">
             <!-- post container for margin t&b -->
-            <div class="row my-3" id="user-post">
+            <div class="row my-3">
                 <!-- post card -->
                 <div class="post card">
                     <div class="user-info flex">
-                        <div class="flex">
-                            <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                            <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
-                        </div>
-                        <div class="edit-post-privacy">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                edit
-                            </button>
-                        </div>
+                        <img id="account-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 class="account-name">Abdelrahman Mostafa</h5>
                     </div>
                     <hr>
                     <!-- post text -->
-                    <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <p id="post-text" style="font-size: 20px;" class="my-2">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
                         Harum,asperiores!</p>
                     <!-- post main img -->
-                    <img id="post-img" class="border" src="images/post-img-demo.jpg" alt="">
+                    <img id="post-img" class="" src="images/post-img-demo.jpg" alt="">
                     <!-- likes count -->
-                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                    <p class="likes-count my-2"><span id="likes-count">5</span> like this post</p>
                     <hr>
                     <!-- like and comment btns -->
                     <div class="post-interact flex">
@@ -131,31 +102,23 @@
                     </div>
                 </div>
             </div>
-            <!-- ------------------------------------------- -->
-            <div class="row my-3" id="user-post">
+            <!-- post container for margin t&b -->
+            <div class="row my-3">
                 <!-- post card -->
                 <div class="post card">
                     <div class="user-info flex">
-                        <div class="flex">
-                            <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                            <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
-                        </div>
-                        <div class="edit-post-privacy">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                edit
-                            </button>
-
-                        </div>
+                        <img id="account-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 class="account-name">Abdelrahman Mostafa</h5>
                     </div>
                     <hr>
                     <!-- post text -->
-                    <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <p id="post-text" style="font-size: 20px;" class="my-2">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
                         Harum,asperiores!</p>
                     <!-- post main img -->
                     <img id="post-img" class="" src="" alt="">
                     <!-- likes count -->
-                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                    <p class="likes-count my-2"><span id="likes-count">5</span> like this post</p>
                     <hr>
                     <!-- like and comment btns -->
                     <div class="post-interact flex">
@@ -170,33 +133,16 @@
                     </div>
                 </div>
             </div>
+            <!-- post container for margin t&b -->
+
         </div>
+
     </div>
     <!-- Button trigger modal -->
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Post Privacy</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                          <input type="radio" id="html" name="Privacy" value="privet">
-                          <label for="html">privet</label><br>
-                          <input type="radio" id="public" name="Privacy" value="Public">
-                          <label for="public">Public</label><br><br>
-                        <input class="btn btn-primary" type="submit" value="Submit">
-                    </form>
-                    <hr>
-                    <button class="btn btn-outline-danger">Delete Post</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <button class="btn btn-primary" onclick="topFunction()" id="topBtn" title="Go to top"><i class='fas fa-angle-up'
             style='font-size:24px'></i></button>
 

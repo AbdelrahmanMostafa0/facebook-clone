@@ -76,6 +76,16 @@ nav {
 
 }
 
+.user-info {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit-post-privacy {
+    justify-self: flex-end;
+    margin-left: 200px;
+}
+
 nav .flex {
     justify-content: space-between;
     min-height: 70px;
@@ -363,6 +373,10 @@ input[type="file"] {
         justify-self: start;
         margin-left: 0;
         flex-direction: row;
+    }
+
+    .user-info:first-child {
+        flex-direction: row !important;
     }
 
 }
