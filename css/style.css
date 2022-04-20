@@ -46,6 +46,8 @@ a {
 
 }
 
+
+
 .login-form .card {
     position: absolute;
     top: 50%;
@@ -100,10 +102,7 @@ nav {
     width: 100%;
 }
 
-.edit-post-privacy {
-    justify-self: flex-end;
-    margin-left: 200px;
-}
+
 
 nav .flex {
     justify-content: space-between;
@@ -146,7 +145,7 @@ nav img {
     margin: 0 auto;
 }
 
-#profile-pic {
+.profile-pic {
     width: 50px;
 
 }
@@ -162,9 +161,7 @@ nav img {
     margin: 0 auto;
 }
 
-#post-text {
-    grid-column: 2;
-}
+
 
 .add-post #img {
 
@@ -188,6 +185,10 @@ nav img {
     grid-column: 4;
     margin-left: -20px;
     margin-right: 20px;
+}
+
+.add-post img {
+    width: 50px;
 }
 
 input[type="file"] {
@@ -270,7 +271,98 @@ input[type="file"] {
 
 }
 
+.like {
+    position: relative;
+    cursor: pointer;
+}
+
+.edit-post-privacy {
+    position: relative;
+    left: 200px;
+
+}
+
+.reactions {
+    display: none;
+    position: absolute;
+    top: -60px;
+    right: -20px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    transition: all 0.3s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.reactions div {
+    justify-content: space-between;
+}
+
+.reactions div a {
+    margin: 0 10px;
+}
+
+.dislike-btn {
+    transform: rotate(90deg);
+    display: none;
+
+}
+
+.like:hover .reactions,
+.reactions:hover {
+    display: block;
+}
+
+.add-comment img,
+.comment img {
+    margin-right: 5px;
+    width: 50px;
+    border: 1px solid #333;
+}
+
+.comment-body {
+    position: relative;
+    border: solid 1px #333;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.168);
+}
+
+/* .comment-body::after,
+.comment-body::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    background-color: #ffffff;
+    height: 50px;
+    z-index: 55;
+    top: 0;
+
+} */
+
+.comment {
+    margin-bottom: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.post {
+    position: relative;
+}
+
+.change-pic {
+    width: 400px;
+}
+
 @media(max-width:780px) {
+    .dropdown {
+
+        margin: 0 auto;
+    }
+
     nav {
         padding: 1.5rem 0;
     }
@@ -298,7 +390,7 @@ input[type="file"] {
 
     }
 
-    #profile-pic {
+    .profile-pic {
         width: 50px;
         grid-column: 1;
         align-self: center;
@@ -398,4 +490,41 @@ input[type="file"] {
         flex-direction: row !important;
     }
 
+    .edit-post {
+        margin-left: -2px;
+    }
+
+    .user-post-info {
+        flex-direction: row;
+
+    }
+
+    .edit-post-privacy {
+        left: 100px;
+    }
+
+    .change-pic {
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width:531px) {
+    .edit-post-privacy {
+        left: 70px;
+    }
+}
+
+
+@media(max-width:500px) {
+    .edit-post-privacy {
+        left: 40px;
+    }
+}
+
+@media(max-width:470px) {
+    .edit-post-privacy {
+        left: 20px;
+    }
 }

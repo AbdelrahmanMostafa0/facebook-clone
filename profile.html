@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Facebook-Profile</title>
+    <title>Facebook</title>
 </head>
 
 <body>
@@ -46,23 +46,22 @@
         </div>
     </nav>
     <!-- ----------------------profile info section---------------- -->
-    <div class="card">
+    <div id="user-info-container" class="card">
         <div class=" container">
-            <div class="profile-info">
-                <div class="container  flex ">
-                    <div class="flex">
-                        <!-- profile img -->
-                        <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                        <!-- user info -->
-                        <div class="user-info">
-                            <h2 class="user-name">Abdelrahman Mostafa</h2>
-                            <p id="friends"><span id="friends-count">500</span> Friend</p>
-                        </div>
+            <div id="user-info" class="profile-info flex ">
+                <!-- user info -->
+                <div id="user-details" class="flex">
+                    <!-- profile img -->
+                    <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <!-- user name&Friends count -->
+                    <div class="user-info">
+                        <h2 class="user-name">Abdelrahman Mostafa</h2>
+                        <p id="friends"><span id="friends-count">500</span> Friend</p>
                     </div>
-                    <!-- edit profilr btn -->
-                    <div class="go-edit">
-                        <a class="btn btn-dark" href="edit-profile.html">Edit profile</a>
-                    </div>
+                </div>
+                <!-- edit profilr btn -->
+                <div id="edit-btn" class="go-edit">
+                    <a class="btn btn-dark" href="edit-profile.html">Edit profile</a>
                 </div>
             </div>
         </div>
@@ -70,21 +69,21 @@
 
     <!-- ----------------------add post section---------------- -->
     <div class="container add-post">
-        <div class="card my-3" ">
+        <div class="card my-3 ">
             <!-- form body -->
             <form action="" class=" grid">
-            <!-- profile img -->
-            <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" id="profile-pic">
-            <!-- post text inout -->
-            <input type="text" id="post-text" name="post-text" placeholder="What's on your mind">
-            <!-- <textarea style="border-radius: 30px;" type="text" id="post-text" name="post-text"
+                <!-- profile img -->
+                <img class="rounded-circle profile-pic" src="images/demo-profile-img.jpg" alt="" id="user-img">
+                <!-- post text inout -->
+                <input type="text" id="post-text" name="post-text" placeholder="What's on your mind">
+                <!-- <textarea style="border-radius: 30px;" type="text" id="post-text" name="post-text"
             placeholder="What's on your mind"></textarea> -->
-            <!-- img uploader -->
-            <input type="file" id="file" name="img" accept="image/*">
-            <label for="file" class="upload-btn"><i class="upload-icon material-icons"
-                    style="font-size:36px">add_to_photos</i></label>
-            <!-- post btn -->
-            <input class="btn btn-outline-primary" type="submit" value="Post">
+                <!-- img uploader -->
+                <input type="file" id="file" name="img" accept="image/*">
+                <label for="file" class="upload-btn"><i class="upload-icon material-icons"
+                        style="font-size:36px">add_to_photos</i></label>
+                <!-- post btn -->
+                <input class="btn btn-outline-primary" type="submit" value="Post">
             </form>
             <!-- form body end -->
             <hr>
@@ -93,83 +92,142 @@
     <!-- ----------------------news feed section---------------- -->
     <div class="news-feed">
         <div class="container">
-            <!-- post container for margin t&b -->
-            <div class="row my-3" id="user-post">
-                <!-- post card -->
-                <div class="post card">
-                    <div class="user-info flex">
-                        <div class="flex">
-                            <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                            <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
-                        </div>
-                        <div class="edit-post-privacy">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                edit
-                            </button>
-                        </div>
+            <!-- post card -->
+            <div id="user-post" class="post card my-3">
+                <div class="user-info flex">
+                    <div class="flex user-post-info">
+                        <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
                     </div>
-                    <hr>
-                    <!-- post text -->
-                    <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Harum,asperiores!</p>
-                    <!-- post main img -->
-                    <img id="post-img" class="border" src="images/post-img-demo.jpg" alt="">
-                    <!-- likes count -->
-                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
-                    <hr>
-                    <!-- like and comment btns -->
-                    <div class="post-interact flex">
-                        <!-- like btn -->
-                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
-                                    class="fa like-icon">&#xf087;</i> like</a>
-                        </div>
-                        <!-- comment btn -->
-                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
-                                    class='far'>&#xf27a;</i>Comment</a>
-                        </div>
+                    <div class="edit-post-privacy">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            edit
+                        </button>
                     </div>
                 </div>
-            </div>
-            <!-- ------------------------------------------- -->
-            <div class="row my-3" id="user-post">
-                <!-- post card -->
-                <div class="post card">
-                    <div class="user-info flex">
-                        <div class="flex">
-                            <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                            <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
-                        </div>
-                        <div class="edit-post-privacy">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                edit
-                            </button>
+                <hr>
+                <!-- post text -->
+                <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Harum,asperiores!</p>
+                <!-- post main img -->
+                <img id="post-img" class="border" src="images/meme.png" alt="">
+                <!-- likes count -->
+                <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                <hr>
+                <!-- like and comment btns -->
+                <div class="post-interact flex">
+                    <!-- like btn -->
+                    <div id="like-btn" class="like"><button class="btn btn-primary" href=""><i style="font-size:30px"
+                                class="fa like-icon">&#xf087;</i> like</لا>
+                    </div>
+                    <!-- comment btn -->
+                    <div id="dislike-btn" class="like"><button class="btn btn-primary"><i class="fa fa-thumbs-down"
+                                style="font-size:29px"></i>
+                            Dislike</button>
+                    </div>
+                </div>
 
+                <hr>
+                <div class="add-comment">
+                    <form action="">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" style="width: 50px;">
+                        <input id="comment-text-input" style="border-radius: 40px;width: 70%;" type="text"
+                            placeholder="Add Comment">
+                        <input id="submit-comment" class="btn btn-outline-primary" type="submit" value="Post">
+
+                    </form>
+                </div>
+                <br>
+                <div class="view-comments">
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita enim,
+                                suscipit facere et eveniet excepturi voluptatibus porro. Inventore, rem.</p>
                         </div>
                     </div>
-                    <hr>
-                    <!-- post text -->
-                    <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Harum,asperiores!</p>
-                    <!-- post main img -->
-                    <img id="post-img" class="" src="" alt="">
-                    <!-- likes count -->
-                    <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
-                    <hr>
-                    <!-- like and comment btns -->
-                    <div class="post-interact flex">
-                        <!-- like btn -->
-                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
-                                    class="fa like-icon">&#xf087;</i> like</a>
-                        </div>
-                        <!-- comment btn -->
-                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
-                                    class='far'>&#xf27a;</i>Comment</a>
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- ------------------------------------------- -->
+
+            <!-- post card -->
+            <div id="user-post" class="post card my-3">
+                <div class="user-info flex">
+                    <div class="flex user-post-info">
+                        <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                        <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
+                    </div>
+                    <div class="edit-post-privacy">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            edit
+                        </button>
+
+                    </div>
+                </div>
+                <hr>
+                <!-- post text -->
+                <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Harum,asperiores!</p>
+                <!-- post main img -->
+                <img id="post-img" class="" src="" alt="">
+                <!-- likes count -->
+                <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
+                <hr>
+                <!-- like and comment btns -->
+                <div class="post-interact flex">
+                    <!-- like btn -->
+                    <div class="like"><button id="like-btn" class="btn btn-primary" href=""><i style="font-size:30px"
+                                class="fa like-icon">&#xf087;</i> like</لا>
+                    </div>
+                    <!-- comment btn -->
+                    <div class="like"><button id="dislike-btn" class="btn btn-primary"><i class="fa fa-thumbs-down"
+                                style="font-size:29px"></i>
+                            Dislike</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="add-comment">
+                    <form action="">
+                        <img id="account-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt=""
+                            style="width: 50px;">
+                        <input id="comment-text-input" style="border-radius: 40px;width: 70%;" type="text"
+                            placeholder="Add Comment">
+                        <input id="submit-comment" class="btn btn-outline-primary" type="submit" value="Post">
+
+                    </form>
+                </div>
+                <br>
+                <div class="view-comments">
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita enim,
+                                suscipit facere et eveniet excepturi voluptatibus porro. Inventore, rem.</p>
+                        </div>
+                    </div>
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- Button trigger modal -->

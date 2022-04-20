@@ -26,12 +26,12 @@
                 <input type="search" id="site-search" name="q" placeholder="search">
                 <button class="btn btn-primary">Search</button>
             </div>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+            <div class="dropdown text-center">
+                <button class="btn text-center btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="images/icons8-settings-144.png" alt="" style="width: 25px;">
+
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <ul class="text-center dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item" href="home.html">Home</a></li>
                     <li><a class="dropdown-item " href="profile.html">Profile</a></li>
                     <li><a class="dropdown-item" href="edit-profile.html">Edit Profile</a></li>
@@ -68,80 +68,129 @@
     <div class="news-feed">
         <div class="container">
             <!-- post container for margin t&b -->
-            <div class="row my-3">
-                <!-- post card -->
-                <div class="post card">
-                    <div class="user-info flex">
-                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                        <h5 class="account-name">Abdelrahman Mostafa</h5>
+
+            <!-- post card -->
+            <div id="post" class="post card my-3">
+                <div class="user-info flex">
+                    <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <h5 class="account-name">Abdelrahman Mostafa</h5>
+                </div>
+                <hr>
+                <!-- post text -->
+                <p id="post-text" style="font-size: 20px;" class="my-2">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit.
+                    Harum,asperiores!</p>
+                <!-- post main img -->
+                <img id="post-img" class="" src="images/post-img-demo.jpg" alt="">
+                <!-- likes count -->
+                <p class="likes-count my-2"><span id="likes-count">5</span> like this post</p>
+                <hr>
+                <!-- like and comment btns -->
+                <div class="post-interact flex">
+                    <!-- like btn -->
+                    <div id="like-btn" class="like"><button class="btn btn-primary" href=""><i style="font-size:30px"
+                                class="fa like-icon">&#xf087;</i> like</لا>
                     </div>
-                    <hr>
-                    <!-- post text -->
-                    <p id="post-text" style="font-size: 20px;" class="my-2">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit.
-                        Harum,asperiores!</p>
-                    <!-- post main img -->
-                    <img id="post-img" class="" src="images/post-img-demo.jpg" alt="">
-                    <!-- likes count -->
-                    <p class="likes-count my-2"><span id="likes-count">5</span> like this post</p>
-                    <hr>
-                    <!-- like and comment btns -->
-                    <div class="post-interact flex">
-                        <!-- like btn -->
-                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
-                                    class="fa like-icon">&#xf087;</i> like</a>
+                    <!-- comment btn -->
+                    <div id="dislike-btn" class="like"><button class="btn btn-primary"><i class="fa fa-thumbs-down"
+                                style="font-size:29px"></i>
+                            Dislike</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="add-comment">
+                    <form action="">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" style="width: 50px;">
+                        <input id="comment-text-input" style="border-radius: 40px;width: 70%;" type="text"
+                            placeholder="Add Comment">
+                        <input id="submit-comment" class="btn btn-outline-primary" type="submit" value="Post">
+
+                    </form>
+                </div>
+                <br>
+                <div class="view-comments">
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita enim,
+                                suscipit facere et eveniet excepturi voluptatibus porro. Inventore, rem.</p>
                         </div>
-                        <!-- comment btn -->
-                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
-                                    class='far'>&#xf27a;</i>Comment</a>
+                    </div>
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- post container for margin t&b -->
-            <div class="row my-3">
-                <!-- post card -->
-                <div class="post card">
-                    <div class="user-info flex">
-                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                        <h5 class="account-name">Abdelrahman Mostafa</h5>
-                    </div>
-                    <hr>
-                    <!-- post text -->
-                    <p id="post-text" style="font-size: 20px;" class="my-2">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit.
-                        Harum,asperiores!</p>
-                    <!-- post main img -->
-                    <img id="post-img" class="" src="" alt="">
-                    <!-- likes count -->
-                    <p class="likes-count my-2"><span id="likes-count">5</span> like this post</p>
-                    <hr>
-                    <!-- like and comment btns -->
-                    <div class="post-interact flex">
-                        <!-- like btn -->
-                        <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
-                                    class="fa like-icon">&#xf087;</i> like</a>
-                        </div>
-                        <!-- comment btn -->
-                        <div id="comment-btn" class="like"><a href=""><i style='font-size:24px'
-                                    class='far'>&#xf27a;</i>Comment</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
             <!-- post container for margin t&b -->
 
+            <!-- post card -->
+            <div class="post card my-3">
+                <div class="user-info flex">
+                    <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
+                    <h5 class="account-name">Abdelrahman Mostafa</h5>
+                </div>
+                <hr>
+                <!-- post text -->
+                <p id="post-text" style="font-size: 20px;" class="my-2">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit.
+                    Harum,asperiores!</p>
+                <!-- post main img -->
+                <img id="post-img" class="" src="" alt="">
+                <!-- likes count -->
+                <p class="likes-count my-2"><span id="likes-count">5</span> like this post</p>
+                <hr>
+                <!-- like and comment btns -->
+                <div class="post-interact flex">
+                    <!-- like btn -->
+                    <div id="like-btn" class="like"><a href=""><i style="font-size:30px"
+                                class="fa like-icon">&#xf087;</i>
+                            like</a>
+                    </div>
+                    <!-- comment btn -->
+                    <div id="dislike-btn" class="like"><a href=""><i class="fa fa-thumbs-down"
+                                style="font-size:29px"></i>
+                            Dislike</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="add-comment">
+                    <form action="">
+                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" style="width: 50px;">
+                        <input id="comment-text-input" style="border-radius: 40px;width: 70%;" type="text"
+                            placeholder="Add Comment">
+                        <input id="submit-comment" class="btn btn-outline-primary" type="submit" value="Post">
+
+                    </form>
+                </div>
+                <br>
+                <div class="view-comments">
+                    <div class="flex comment">
+                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <div class="comment-body">
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita enim,
+                                suscipit facere et eveniet excepturi voluptatibus porro. Inventore, rem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- post container for margin t&b -->
+
+    </div>
 
     </div>
     <button class="btn btn-primary" onclick="topFunction()" id="topBtn" title="Go to top"><i class='fas fa-angle-up'
             style='font-size:24px'></i></button>
 
-    <!-- <form action="/action_page.php">
-        <label for="img">Select image:</label>
-        <input type="file" id="img" name="img" accept="image/*">
-        <input type="submit">
-    </form> -->
+
     <script src="js/bootstrap.bundle.js"></script>
 
     <script src=" js/main.js"> </script>
