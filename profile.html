@@ -129,104 +129,32 @@
                 </div>
 
                 <hr>
-                <div class="add-comment">
+                <div id="add-comment" class="add-comment">
                     <form action="">
-                        <img class="rounded-circle" src="images/demo-profile-img.jpg" alt="" style="width: 50px;">
+                        <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt=""
+                            style="width: 50px;">
                         <input id="comment-text-input" style="border-radius: 40px;width: 70%;" type="text"
                             placeholder="Add Comment">
                         <input id="submit-comment" class="btn btn-outline-primary" type="submit" value="Post">
-
                     </form>
                 </div>
                 <br>
-                <div class="view-comments">
+                <div id="view-comments" class="view-comments">
                     <div class="flex comment">
-                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
+                        <img id="account-img" class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
                         <div class="comment-body">
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita enim,
+                            <p id="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                                expedita enim,
                                 suscipit facere et eveniet excepturi voluptatibus porro. Inventore, rem.</p>
                         </div>
                     </div>
-                    <div class="flex comment">
-                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
-                        <div class="comment-body">
 
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <!-- ------------------------------------------- -->
 
-            <!-- post card -->
-            <div id="user-post" class="post card my-3">
-                <div class="user-info flex">
-                    <div class="flex user-post-info">
-                        <img id="user-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                        <h5 id="user-name" class="user-name">Abdelrahman Mostafa</h5>
-                    </div>
-                    <div class="edit-post-privacy">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            edit
-                        </button>
-
-                    </div>
-                </div>
-                <hr>
-                <!-- post text -->
-                <p id="post-text" class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Harum,asperiores!</p>
-                <!-- post main img -->
-                <img id="post-img" class="" src="" alt="">
-                <!-- likes count -->
-                <p class="likes-count my-1"><span id="likes-count">5</span> like this post</p>
-                <hr>
-                <!-- like and comment btns -->
-                <div class="post-interact flex">
-                    <!-- like btn -->
-                    <div class="like"><button id="like-btn" class="btn btn-primary" href=""><i style="font-size:30px"
-                                class="fa like-icon">&#xf087;</i> like</لا>
-                    </div>
-                    <!-- comment btn -->
-                    <div class="like"><button id="dislike-btn" class="btn btn-primary"><i class="fa fa-thumbs-down"
-                                style="font-size:29px"></i>
-                            Dislike</button>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="add-comment">
-                    <form action="">
-                        <img id="account-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt=""
-                            style="width: 50px;">
-                        <input id="comment-text-input" style="border-radius: 40px;width: 70%;" type="text"
-                            placeholder="Add Comment">
-                        <input id="submit-comment" class="btn btn-outline-primary" type="submit" value="Post">
-
-                    </form>
-                </div>
-                <br>
-                <div class="view-comments">
-                    <div class="flex comment">
-                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
-                        <div class="comment-body">
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita enim,
-                                suscipit facere et eveniet excepturi voluptatibus porro. Inventore, rem.</p>
-                        </div>
-                    </div>
-                    <div class="flex comment">
-                        <img class="rounded-circle" src="images/fb-profilr-placeholder.jpeg" alt="">
-                        <div class="comment-body">
-
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>
@@ -243,8 +171,8 @@
                 </div>
                 <div class="modal-body">
                     <form action="">
-                          <input type="radio" id="html" name="Privacy" value="privet">
-                          <label for="html">privet</label><br>
+                          <input type="radio" id="html" name="Privacy" value="private">
+                          <label for="html">private</label><br>
                           <input type="radio" id="public" name="Privacy" value="Public">
                           <label for="public">Public</label><br><br>
                         <input class="btn btn-primary" type="submit" value="Submit">
