@@ -357,7 +357,15 @@ input[type="file"] {
     width: 400px;
 }
 
+.show-search {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 @media(max-width:780px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
     .dropdown {
 
         margin: 0 auto;

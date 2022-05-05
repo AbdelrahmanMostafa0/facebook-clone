@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/fb-icon-sm.png">
 
+    <!-- fontaoswm -->
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -18,20 +19,19 @@
 </head>
 
 <body>
-    <!-- ----------------------navbar---------------- -->
     <nav>
         <div class=" container flex">
             <a href="home.html"><img src="images/fb-icon-md.png" alt=""></a>
             <div class="search">
                 <input type="search" id="site-search" name="q" placeholder="search">
-                <button class="btn btn-outline-primary">Search</button>
+                <button class="btn btn-primary">Search</button>
             </div>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+            <div class="dropdown text-center">
+                <button class="btn text-center btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="images/icons8-settings-144.png" alt="" style="width: 25px;">
+
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <ul class="text-center dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item" href="home.html">Home</a></li>
                     <li><a class="dropdown-item " href="profile.html">Profile</a></li>
                     <li><a class="dropdown-item" href="edit-profile.html">Edit Profile</a></li>
@@ -45,38 +45,36 @@
             </div>
         </div>
     </nav>
-    <!-- ----------------------profile info section---------------- -->
-    <div class="card">
-        <div class="container">
-            <div class="profile-info">
-                <div class="container  flex ">
-                    <div class="flex">
-                        <!-- profile img -->
-                        <img id="account-img" class="rounded-circle" src="images/demo-profile-img.jpg" alt="">
-                        <!-- user info -->
-                        <div class="user-info">
-                            <h2 id="account-name" class="user-name">Abdelrahman Mostafa</h2>
-                            <p id="friends"><span id="friends-count">500</span> Friend</p>
-                        </div>
-                    </div>
-                    <!-- edit profilr btn -->
-                    <div class="add-friend">
-                        <button id="add-friend" class="btn btn-success">Add Friend</button>
-                    </div>
-                </div>
-            </div>
+    <!-- the result container viwer -->
+    <div class="container show-search grid my-5 p-3">
+        <!-- the account card view  -->
+        <div class="card m-2  search-result">
+            <img id="account-img" src="images/fb-profilr-placeholder.jpeg" alt="">
+            <h3 class="account-name">Abdelrahman Mostafa</h3>
+            <button id="add-friend" class="btn btn-success">Add Friend</button>
+        </div>
+        <!-- the account card view  -->
+        <div class="card m-2  search-result">
+            <img id="account-img" src="images/fb-profilr-placeholder.jpeg" alt="">
+            <h3 class="account-name">Abdelrahman Mostafa</h3>
+            <button id="add-friend" class="btn btn-success">Add Friend</button>
+        </div>
+        <!-- the account card view  -->
+        <div class="card m-2  search-result">
+            <img id="account-img" src="images/fb-profilr-placeholder.jpeg" alt="">
+            <h3 class="account-name">Abdelrahman Mostafa</h3>
+            <button id="add-friend" class="btn btn-success">Add Friend</button>
+        </div>
+        <!-- the account card view  -->
+        <div class="card m-2  search-result">
+            <img id="account-img" src="images/fb-profilr-placeholder.jpeg" alt="">
+            <h3 class="account-name">Abdelrahman Mostafa</h3>
+            <button id="add-friend" class="btn btn-success">Add Friend</button>
         </div>
     </div>
-    <div class="container grid text-center none-friend-text" style="height: 50vh; align-items: center;">
-        <h2 id="none-friend-text" class="display-2">You can't see this person posts unless it's your friend</h2>
-    </div>
-    <!-- Button trigger modal -->
-
-
-    <!-- Modal -->
-
     <button class="btn btn-primary" onclick="topFunction()" id="topBtn" title="Go to top"><i class='fas fa-angle-up'
             style='font-size:24px'></i></button>
+
 
     <script src="js/bootstrap.bundle.js"></script>
 

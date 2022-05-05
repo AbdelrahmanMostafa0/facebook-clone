@@ -27,3 +27,23 @@ comment content => #comment-text
 ______________
 add comment
 ---------------
+view st
+edit
+view friend
+search
+sign
+log 
+profile
+req
+home
+
+
+view st
+edit
+
+search
+sign
+log 
+profile
+
+home
